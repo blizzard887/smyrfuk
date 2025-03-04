@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Математические заметки</title>
+    <style>
+        /* Основные стили */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Шапка сайта */
+        header {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+        }
+
+        /* Контейнер для контента */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* Секции с теорией */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #2575fc;
+            border-bottom: 2px solid #2575fc;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .section p {
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+
+        .section ul {
+            list-style-type: disc;
+            margin: 10px 0 10px 20px;
+        }
+
+        .section ul li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        /* Примеры */
+        .example {
+            background: #f1f1f1;
+            padding: 15px;
+            border-left: 4px solid #2575fc;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .example p {
+            margin: 5px 0;
+            font-size: 1.1rem;
+        }
+
+        .example strong {
+            color: #2575fc;
+        }
+
+        /* Формулы */
+        .formula {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.2rem;
+            color: #6a11cb;
+            margin: 10px 0;
+            padding: 10px;
+            background: #f1f1f1;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        /* Подвал */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #333;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Математические заметки</h1>
+        <p>Правила, теоремы и формулы для 9 класса</p>
+    </header>
+
+    <div class="container">
+        <!-- Алгебра -->
+        <div class="section">
+            <h2>Алгебра</h2>
+            <p>Основные формулы и правила:</p>
+            <ul>
+                <li><strong>Квадратное уравнение:</strong> <span class="formula">ax² + bx + c = 0</span>. Решение: <span class="formula">x = (-b ± √D) / 2a</span>, где <span class="formula">D = b² - 4ac</span>.</li>
+                <li><strong>Теорема Виета:</strong> Для уравнения <span class="formula">x² + px + q = 0</span>, если <span class="formula">x₁</span> и <span class="formula">x₂</span> — корни, то <span class="formula">x₁ + x₂ = -p</span> и <span class="formula">x₁ · x₂ = q</span>.</li>
+                <li><strong>Арифметическая прогрессия:</strong>
+                    <ul>
+                        <li>n-й член: <span class="formula">aₙ = a₁ + (n - 1)d</span></li>
+                        <li>Сумма первых n членов: <span class="formula">Sₙ = (a₁ + aₙ) · n / 2</span></li></ul>
+                </li>
+                <li><strong>Геометрическая прогрессия:</strong>
+                    <ul>
+                        <li>n-й член: <span class="formula">bₙ = b₁ · q^(n-1)</span></li>
+                        <li>Сумма первых n членов: <span class="formula">Sₙ = b₁ · (qⁿ - 1) / (q - 1)</span></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="example">
+                <p><strong>Пример 1:</strong> Решите уравнение <span class="formula">x² - 5x + 6 = 0</span>.</p>
+                <p><strong>Решение:</strong></p>
+                <p>1. Находим дискриминант: <span class="formula">D = (-5)² - 4 · 1 · 6 = 25 - 24 = 1</span>.</p>
+                <p>2. Корни уравнения: <span class="formula">x = (5 ± √1) / 2</span>.</p>
+                <p>3. Получаем: <span class="formula">x₁ = 3</span>, <span class="formula">x₂ = 2</span>.</p>
+                <p><strong>Ответ:</strong> <span class="formula">x₁ = 3</span>, <span class="formula">x₂ = 2</span>.</p>
+            </div>
+
+            <div class="example">
+                <p><strong>Пример 2:</strong> Найдите сумму первых 10 членов арифметической прогрессии, если <span class="formula">a₁ = 2</span> и <span class="formula">d = 3</span>.</p>
+                <p><strong>Решение:</strong></p>
+                <p>1. Находим 10-й член: <span class="formula">a₁₀ = a₁ + (10 - 1)d = 2 + 9 · 3 = 29</span>.</p>
+                <p>2. Сумма первых 10 членов: <span class="formula">S₁₀ = (a₁ + a₁₀) · 10 / 2 = (2 + 29) · 5 = 155</span>.</p>
+                <p><strong>Ответ:</strong> <span class="formula">S₁₀ = 155</span>.</p>
+            </div>
+        </div>
+
+        <!-- Геометрия -->
+        <div class="section">
+            <h2>Геометрия</h2>
+            <p>Основные теоремы и формулы:</p>
+            <ul>
+                <li><strong>Теорема Пифагора:</strong> В прямоугольном треугольнике <span class="formula">a² + b² = c²</span>, где <span class="formula">c</span> — гипотенуза.</li>
+                <li><strong>Площадь треугольника:</strong> <span class="formula">S = ½ · a · h</span>, где <span class="formula">a</span> — основание, <span class="formula">h</span> — высота.</li>
+                <li><strong>Площадь круга:</strong> <span class="formula">S = πr²</span>, где <span class="formula">r</span> — радиус.</li>
+            </ul>
+
+            <div class="example">
+                <p><strong>Пример 3:</strong> Найдите площадь круга с радиусом <span class="formula">r = 5</span>.</p>
+                <p><strong>Решение:</strong></p>
+                <p>1. Используем формулу: <span class="formula">S = πr²</span>.</p>
+                <p>2. Подставляем значение: <span class="formula">S = π · 5² = 25π</span>.</p>
+                <p><strong>Ответ:</strong> <span class="formula">S = 25π</span>.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2023 Математические заметки. Все права защищены.</p>
+    </footer>
+</body>
+</html>
