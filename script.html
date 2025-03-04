@@ -1,0 +1,35 @@
+<!-- Калькулятор квадратных уравнений -->
+<div class="section">
+    <h2>Калькулятор квадратных уравнений</h2>
+    <p>Решите уравнение вида <span class="formula">ax² + bx + c = 0</span>:</p>
+    <input type="number" id="a" placeholder="Введите a"> x² +
+    <input type="number" id="b" placeholder="Введите b"> x +
+    <input type="number" id="c" placeholder="Введите c"> = 0
+    <button onclick="solveQuadratic()">Решить</button>
+    <p id="result"></p>
+</div>
+
+<script>
+    function solveQuadratic() {
+        const a = parseFloat(document.getElementById('a').value);
+        const b = parseFloat(document.getElementById('b').value);
+        const c = parseFloat(document.getElementById('c').value);
+
+        if (isNaN(a)  isNaN(b)  isNaN(c)) {
+            document.getElementById('result').innerText = "Пожалуйста, введите корректные числа.";
+            return;
+        }
+
+        const D = b * b - 4 * a * c;
+        if (D < 0) {
+            document.getElementById('result').innerText = "Уравнение не имеет действительных корней.";
+        } else if (D === 0) {
+            const x = (-b) / (2 * a);
+            document.getElementById('result').innerText = Уравнение имеет один корень: x = ${x.toFixed(2)};
+        } else {
+            const x1 = (-b + Math.sqrt(D)) / (2 * a);
+            const x2 = (-b - Math.sqrt(D)) / (2 * a);
+            document.getElementById('result').innerText = Уравнение имеет два корня: x₁ = ${x1.toFixed(2)}, x₂ = ${x2.toFixed(2)};
+        }
+    }
+</script>
